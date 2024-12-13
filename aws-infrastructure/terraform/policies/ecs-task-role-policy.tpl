@@ -40,9 +40,7 @@ ${jsonencode(
          },
 {
       "Effect": "Allow",
-      "Action": [
-        "sns:Publish"
-      ],
+      "Action": "sns:Publish"
       "Resource": "*"
      }
   ]
