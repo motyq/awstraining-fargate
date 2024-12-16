@@ -31,7 +31,7 @@ public class SNSConfig {
     //  3. Think how to connect with AWS Service from your local pc. 
     @Bean
     AmazonSNS configureSNSClient() {
-        if (snsAccessKey != null || snsSecretKey != null) {
+        if (snsAccessKey != null && snsSecretKey != null) {
             return AmazonSNSClientBuilder.standard()
                     .withRegion(awsRegion)
                     .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(snsAccessKey, snsSecretKey)))
