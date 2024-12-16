@@ -40,17 +40,17 @@ ${jsonencode(
          },
 {
       "Effect": "Allow",
-      "Action": "sns:Publish"
+      "Action": "sns:Publish",
       "Resource": "*"
      },
      {
                  "Effect": "Allow",
-                 "Action": [
-                     "translate:TranslateText"
+                 "Action": "translate:TranslateText",
                  "Resource": "*"
              },
-             {  "Action": "comprehend:DetectSentiment",
+             {  
              "Effect": "Allow",
+             "Action": "comprehend:DetectSentiment",
              "Resource": "*"} 
   ]
 }
